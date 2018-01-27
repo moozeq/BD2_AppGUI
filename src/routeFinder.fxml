@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="189.0" prefWidth="623.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RouteFinderController">
+   <children>
+      <ChoiceBox fx:id="stopChooserFrom" layoutX="84.0" layoutY="54.0" prefHeight="25.0" prefWidth="224.0" />
+      <ChoiceBox fx:id="stopChooserTo" layoutX="359.0" layoutY="54.0" prefHeight="25.0" prefWidth="224.0" />
+      <Button layoutX="521.0" layoutY="146.0" mnemonicParsing="false" onAction="#checkRoute" prefHeight="25.0" prefWidth="88.0" text="Check" />
+      <Slider fx:id="routeMinutes" blockIncrement="1.0" layoutX="27.0" layoutY="98.0" majorTickUnit="5.0" max="60.0" minorTickCount="4" prefHeight="43.0" prefWidth="582.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" />
+      <Label layoutX="14.0" layoutY="14.0" text="Choose 2 stops for checking route between them">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="58.0" text="From" />
+      <Label layoutX="329.0" layoutY="58.0" text="to" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="27.0" layoutY="141.0" prefHeight="17.0" prefWidth="140.0" text="Max minutes waiting" textAlignment="CENTER" />
+      <Label fx:id="directRoute" layoutX="489.0" layoutY="17.0" text="There's direct route" textFill="#11ab47" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="noRoutes" layoutX="481.0" layoutY="17.0" text="There are no routes" textFill="#ff2020" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
