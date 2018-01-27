@@ -10,6 +10,9 @@ import javafx.stage.Stage;
 import javafx.util.Duration;
 
 import java.io.IOException;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Created by Ted on 27.01.2018.
@@ -26,10 +29,18 @@ public class RouteFinderController {
     @FXML
     Label noRoutes; //show up when there're no available routes between stops (3rd point)
 
+    private Set<String> stops;
+
     void init() {
 //        Set<Stop> stops = new Set();
 //        stopChooserFrom.setItems(stops);
 //        stopChooserTo.setItems(stops);
+
+        //test data, need to remove this in app
+        stops = new HashSet<>(Arrays.asList("Berlin", "Moscow", "New York"));
+        stopChooserFrom.getItems().addAll(stops);
+        stopChooserTo.getItems().addAll(stops);
+        //--------------------
     }
 
     void setLabel(Label label) {
@@ -75,7 +86,7 @@ public class RouteFinderController {
                 root = fxmlLoader.load();
                 RouteInfoController controller = fxmlLoader.getController();
 //                controller.init(leaveTime, firstLine, stopBetween, secondLine);
-                controller.init("Leave Time", "First Time", "Stop Between", "Second Line");
+                controller.init("8:24", "Berlin-Moscow", "Moscow", "Moscow-New York");
                 Scene scene = new Scene(root);
                 Stage stage = new Stage();
                 stage.setTitle("Route information");

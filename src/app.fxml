@@ -27,8 +27,8 @@
       <Separator layoutX="467.0" mouseTransparent="true" orientation="VERTICAL" prefHeight="551.0" prefWidth="7.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="467.0" AnchorPane.topAnchor="0.0" />
       <Separator layoutX="468.0" layoutY="394.0" mouseTransparent="true" prefHeight="7.0" prefWidth="440.0" />
       <TextField fx:id="lineNumber" layoutX="481.0" layoutY="184.0" prefHeight="25.0" prefWidth="130.0" promptText="Enter line number" />
-      <Slider fx:id="hours" blockIncrement="1.0" layoutX="478.0" layoutY="126.0" majorTickUnit="4.0" max="24.0" prefHeight="45.0" prefWidth="267.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" />
-      <Slider fx:id="minutes" blockIncrement="1.0" layoutX="479.0" layoutY="81.0" majorTickUnit="5.0" max="60.0" minorTickCount="4" prefHeight="45.0" prefWidth="413.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" />
+      <Slider fx:id="hours" blockIncrement="1.0" layoutX="478.0" layoutY="126.0" majorTickUnit="4.0" max="23.0" prefHeight="45.0" prefWidth="267.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" />
+      <Slider fx:id="minutes" blockIncrement="1.0" layoutX="479.0" layoutY="81.0" majorTickUnit="5.0" max="59.0" minorTickCount="4" prefHeight="45.0" prefWidth="413.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" />
       <Button layoutX="742.0" layoutY="354.0" mnemonicParsing="false" onAction="#checkDriverInformation" prefHeight="25.0" prefWidth="154.0" text="Check driver information" />
       <Label alignment="CENTER" layoutX="752.0" layoutY="129.0" prefHeight="38.0" prefWidth="141.0" text="Choose time, stop and line number" textAlignment="CENTER" wrapText="true" />
       <Label alignment="CENTER" layoutX="14.0" layoutY="15.0" prefHeight="38.0" prefWidth="83.0" text="Choose stop:" />
