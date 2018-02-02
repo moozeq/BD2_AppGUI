@@ -6,16 +6,13 @@ import javafx.scene.control.TextArea;
  */
 public class RouteInfoController {
     @FXML
-    TextArea leaveTime; //needs to display when the 1st bus/tram.. is departing (3rd point)
-    @FXML
     TextArea firstLine; //needs to display which line should ride first (3rd point)
     @FXML
     TextArea stopBetween; //needs to display which stop is between lines (3rd point)
     @FXML
     TextArea secondLine; //needs to display which line should ride to destination (3rd point)
 
-    public void init(String _leaveTime, String _firstLine, String _stopBetween, String _secondLine) {
-        leaveTime.setText(_leaveTime); //when leaving first means of transport
+    public void init(String _firstLine, String _stopBetween, String _secondLine) {
         firstLine.setText(_firstLine); //which line needs to ride first
         stopBetween.setText(_stopBetween); //on which stop needs to get out
         secondLine.setText(_secondLine); //which line needs to ride next to destination

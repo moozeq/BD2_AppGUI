@@ -7,20 +7,18 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="325.0" prefWidth="536.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RouteInfoController">
+<AnchorPane prefHeight="229.0" prefWidth="536.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RouteInfoController">
    <children>
-      <TextArea fx:id="leaveTime" editable="false" layoutX="281.0" layoutY="109.0" mouseTransparent="true" prefHeight="27.0" prefWidth="201.0" promptText="Time" />
-      <TextArea fx:id="firstLine" editable="false" layoutX="175.0" layoutY="161.0" mouseTransparent="true" prefHeight="27.0" prefWidth="307.0" promptText="First line" />
-      <TextArea fx:id="stopBetween" editable="false" layoutX="175.0" layoutY="208.0" mouseTransparent="true" prefHeight="27.0" prefWidth="307.0" promptText="Stop between" />
-      <TextArea fx:id="secondLine" editable="false" layoutX="175.0" layoutY="256.0" mouseTransparent="true" prefHeight="27.0" prefWidth="307.0" promptText="Second line" />
-      <Label layoutX="34.0" layoutY="43.0" text="You need to:">
+      <TextArea fx:id="firstLine" editable="false" layoutX="160.0" layoutY="78.0" mouseTransparent="true" prefHeight="27.0" prefWidth="307.0" promptText="First line" />
+      <TextArea fx:id="stopBetween" editable="false" layoutX="160.0" layoutY="125.0" mouseTransparent="true" prefHeight="27.0" prefWidth="307.0" promptText="Stop between" />
+      <TextArea fx:id="secondLine" editable="false" layoutX="160.0" layoutY="173.0" mouseTransparent="true" prefHeight="27.0" prefWidth="307.0" promptText="Second line" />
+      <Label layoutX="25.0" layoutY="27.0" text="You need to:">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <Label layoutX="55.0" layoutY="166.0" text="Choose first line:" />
-      <Label layoutX="55.0" layoutY="213.0" text="Get out on stop:" />
-      <Label layoutX="55.0" layoutY="261.0" text="Choose second line:" />
-      <Label layoutX="55.0" layoutY="114.0" text="Get to means of transport at the time:" />
+      <Label layoutX="40.0" layoutY="83.0" text="Choose first line:" />
+      <Label layoutX="40.0" layoutY="130.0" text="Get out on stop:" />
+      <Label layoutX="40.0" layoutY="178.0" text="Choose second line:" />
    </children>
 </AnchorPane>

@@ -23,8 +23,6 @@ public class RouteFinderController {
     @FXML
     ChoiceBox stopChooserTo; //chose stop to (3rd point)
     @FXML
-    Slider routeMinutes; //user sets on how many max minutes can wait (3rd point)
-    @FXML
     Label directRoute; //show up when there's direct route between stops (3rd point)
     @FXML
     Label noRoutes; //show up when there're no available routes between stops (3rd point)
@@ -86,7 +84,7 @@ public class RouteFinderController {
                 root = fxmlLoader.load();
                 RouteInfoController controller = fxmlLoader.getController();
 //                controller.init(leaveTime, firstLine, stopBetween, secondLine);
-                controller.init("8:24", "Berlin-Moscow", "Moscow", "Moscow-New York");
+                controller.init("Berlin-Moscow", "Moscow", "Moscow-New York");
                 Scene scene = new Scene(root);
                 Stage stage = new Stage();
                 stage.setTitle("Route information");
