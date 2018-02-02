@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="229.0" prefWidth="536.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RouteInfoController">
+   <children>
+      <TextArea fx:id="firstLine" editable="false" layoutX="160.0" layoutY="78.0" mouseTransparent="true" prefHeight="27.0" prefWidth="307.0" promptText="First line" />
+      <TextArea fx:id="stopBetween" editable="false" layoutX="160.0" layoutY="125.0" mouseTransparent="true" prefHeight="27.0" prefWidth="307.0" promptText="Stop between" />
+      <TextArea fx:id="secondLine" editable="false" layoutX="160.0" layoutY="173.0" mouseTransparent="true" prefHeight="27.0" prefWidth="307.0" promptText="Second line" />
+      <Label layoutX="25.0" layoutY="27.0" text="You need to:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="83.0" text="Choose first line:" />
+      <Label layoutX="40.0" layoutY="130.0" text="Get out on stop:" />
+      <Label layoutX="40.0" layoutY="178.0" text="Choose second line:" />
+   </children>
+</AnchorPane>

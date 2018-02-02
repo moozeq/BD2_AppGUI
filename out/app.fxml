@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="551.0" prefWidth="909.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+  <children>
+      <Button layoutX="342.0" layoutY="21.0" mnemonicParsing="false" onAction="#checkTimetable" prefHeight="25.0" prefWidth="113.0" text="Check timetable" />
+    <Button layoutX="798.0" layoutY="497.0" mnemonicParsing="false" onAction="#checkDriversLicenses" prefWidth="94.0" text="Check" />
+    <Label layoutX="487.0" layoutY="412.0" text="Check drivers with license expires in" />
+    <Slider fx:id="months" blockIncrement="1.0" layoutX="497.0" layoutY="435.0" majorTickUnit="1.0" max="12.0" min="1.0" minorTickCount="0" prefWidth="281.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" />
+    <Label layoutX="798.0" layoutY="435.0" prefHeight="21.0001220703125" text="months" />
+    <ChoiceBox fx:id="stopChooser2" layoutX="626.0" layoutY="184.0" prefHeight="25.0" prefWidth="267.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ChoiceBox>
+    <TextArea fx:id="driverInfo" editable="false" layoutX="481.0" layoutY="221.0" mouseTransparent="true" prefHeight="115.0" prefWidth="413.0" promptText="Driver information" wrapText="true" />
+      <Separator layoutX="467.0" mouseTransparent="true" orientation="VERTICAL" prefHeight="551.0" prefWidth="7.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="467.0" AnchorPane.topAnchor="0.0" />
+      <Separator layoutX="468.0" layoutY="394.0" mouseTransparent="true" prefHeight="7.0" prefWidth="440.0" />
+      <TextField fx:id="lineNumber" layoutX="481.0" layoutY="184.0" prefHeight="25.0" prefWidth="130.0" promptText="Enter line number" />
+      <Slider fx:id="hours" blockIncrement="1.0" layoutX="478.0" layoutY="126.0" majorTickUnit="4.0" max="23.0" prefHeight="45.0" prefWidth="267.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" />
+      <Slider fx:id="minutes" blockIncrement="1.0" layoutX="479.0" layoutY="81.0" majorTickUnit="5.0" max="59.0" minorTickCount="4" prefHeight="45.0" prefWidth="413.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" />
+      <Button layoutX="742.0" layoutY="354.0" mnemonicParsing="false" onAction="#checkDriverInformation" prefHeight="25.0" prefWidth="154.0" text="Check driver information" />
+      <Label alignment="CENTER" layoutX="752.0" layoutY="129.0" prefHeight="38.0" prefWidth="141.0" text="Choose time, stop and line number" textAlignment="CENTER" wrapText="true" />
+      <Label alignment="CENTER" layoutX="14.0" layoutY="15.0" prefHeight="38.0" prefWidth="83.0" text="Choose stop:" />
+      <ChoiceBox fx:id="stopChooser1" layoutX="97.0" layoutY="21.0" prefHeight="25.0" prefWidth="238.0">
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:value="Item 1" />
+               <String fx:value="Item 2" />
+               <String fx:value="Item 3" />
+            </FXCollections>
+         </items>
+      </ChoiceBox>
+      <Button layoutX="710.0" layoutY="21.0" mnemonicParsing="false" onAction="#openRouteFinder" prefHeight="25.0" prefWidth="183.0" text="Open route finder" />
+      <ListView fx:id="table" layoutX="25.0" layoutY="67.0" prefHeight="455.0" prefWidth="419.0" />
+  </children>
+</AnchorPane>
